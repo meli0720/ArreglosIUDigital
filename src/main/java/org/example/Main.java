@@ -27,14 +27,19 @@ public class Main {
         }
 
         //3. promedio de todos los datos
-        System.out.println(sumTotal+" / 21 = "+sumTotal/21);
+        System.out.println("\nPromedio ("+sumTotal+"/21) = "+sumTotal/21+"\n");
+
+        //4. mostrar datos del tercer arreglo
+        for (int i = 0; i < vector3.length ; i++) {
+            System.out.println("vector3["+i+"] = "+vector3[i]);
+        }
 
 
 
     }
 
     public static int[] ingresarDatos(Scanner scan, int[] vector){
-        System.out.println("Ingresa los datos del arreglo:");
+        System.out.println("__________________________________"+"\nIngresa los datos del arreglo:\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
         for (int i = 0; i < vector.length; i++) {
             System.out.println("Ingrese el valor para la posición: ["+i+"]");
             vector[i] = scan.nextInt();
